@@ -3,10 +3,10 @@ import Header from "./component/Header";
 import AppRouter from "./router/AppRouter";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from "react-toastify";
-import ModalAddNew from "./component/modal/modal";
+import './App.css'
 function App() {
   return (
-    <>
+    <div className='App'>
       <Header />
       <AppRouter />
       <Footer />
@@ -22,7 +22,7 @@ function App() {
         pauseOnHover
         theme="light"
       />
-    </>
+    </div>
   );
 }
 
