@@ -54,6 +54,7 @@ const ProductClient = () => {
         let res = await handleBuyProduct(data)
         if (res && res.data && res.data.errCode === 0) {
             toast.success('create success')
+            navigate('/purchased-goods')
         }
     };
     return (

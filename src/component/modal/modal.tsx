@@ -8,6 +8,7 @@ import './modal.scss'
 import axios from "axios";
 import { AddNewProduct } from '../../services/userSevices'
 import { Image } from 'react-bootstrap';
+import { Link, useNavigate } from 'react-router-dom';
 
 interface ModalProps {
     isShowModalAddNew: boolean
@@ -22,6 +23,7 @@ const ModalAddNew: React.FC<ModalProps> = ({
     isShowModalAddNew,
     handleClose,
 }) => {
+    const navigate = useNavigate();
     const preset_key = "dlvae8gh";
     const cloud_name = "dz4vueeuf";
     const [image, setImage] = useState('');
@@ -79,6 +81,7 @@ const ModalAddNew: React.FC<ModalProps> = ({
             setDescription('');
             setTitle('')
             handleClose();
+            navigate('/your-product')
         }
         else {
             toast.error(res.data.errMessage)
