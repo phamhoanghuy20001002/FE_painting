@@ -41,7 +41,7 @@ const History = () => {
                 </div>
             </div>
             <div className='propduct-card'>
-                {products.map((product: any) => (
+                {products?.map((product: any) => (
                     <ProductCard
                         key={product.id}
                         data={product.orderDataProduct}
