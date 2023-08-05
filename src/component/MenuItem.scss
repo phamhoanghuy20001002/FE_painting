@@ -1,0 +1,16 @@
+.menu-item-child {
+    padding: 16px 12px;
+
+    .font-semibold {
+        font-weight: 600;
+    }
+
+    &:hover {
+        color: #fff;
+        cursor: pointer;
+
+        box-shadow: inset 200px 0 0 0 #f58220;
+
+    }
+
+}

@@ -1,0 +1,37 @@
+.container-pro-card {
+    grid-column: span 1 / span 1;
+    cursor: pointer;
+
+    .container-product-card {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        padding: 20px;
+
+        .image-product-card {
+            aspect-ratio: 1 / 1;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.75rem;
+        }
+
+        .product-price {
+            display: flex;
+            flex-direction: row;
+            font-weight: 700;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .product-title {
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            font-weight: 700;
+            gap: 4px;
+            align-items: center;
+        }
+    }
+}

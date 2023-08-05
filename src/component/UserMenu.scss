@@ -1,0 +1,25 @@
+.menu-user {
+    position: relative;
+
+    .icon-menu-user {
+        margin-right: 40px;
+        font-size: 20px;
+        cursor: pointer;
+        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+    }
+
+    .open-menu {
+        position: absolute;
+        box-shadow: 5px 4px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 200px;
+        background: white;
+        overflow: hidden;
+        right: 0;
+        top: 12;
+        z-index: 12;
+
+
+    }
+}

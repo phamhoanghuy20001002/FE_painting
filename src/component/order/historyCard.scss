@@ -1,0 +1,61 @@
+.container-pro-card {
+    grid-column: span 1 / span 1;
+    cursor: pointer;
+
+    .container-product-card {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        padding: 20px;
+
+        .image-product-card {
+            aspect-ratio: 1 / 1;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.75rem;
+        }
+
+        .product-price {
+            display: flex;
+            flex-direction: row;
+            font-weight: 700;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .product-title {
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            font-weight: 700;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .button-62 {
+            align-content: center;
+            background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+            width: 100%;
+            border: 0;
+            border-radius: 12px;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 2.5;
+            outline: transparent;
+            padding: 0 1rem;
+            text-align: center;
+            text-decoration: none;
+            transition: box-shadow .2s ease-in-out;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+        }
+    }
+}

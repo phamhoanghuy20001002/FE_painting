@@ -1,0 +1,34 @@
+.product-cate-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    .product-cate-child {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+
+        .product-cate-icon {
+            color: rgb(82 82 82);
+        }
+
+        .info-cate {
+            display: flex;
+            flex-direction: column;
+
+            .label-cate {
+                font-size: 1.125rem;
+                /* 18px */
+                line-height: 1.75rem;
+                /* 28px */
+                font-weight: 600;
+            }
+
+            .desc-cate {
+                font-weight: 300;
+                color: rgb(82 82 82);
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.body-category {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .item {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 9px;
+        overflow-y: auto;
+
+
+        .item-child {
+            grid-column: span 1 / span 1
+        }
+    }
+}
+
+.upload {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .image {
+        width: 70%;
+        height: 70%;
+        margin: auto;
+    }
+}
+
+.body-info {
+    height: 300px;
+}
